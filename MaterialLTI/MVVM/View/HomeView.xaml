@@ -1,0 +1,113 @@
+﻿<UserControl x:Class="MaterialLTI.MVVM.View.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MaterialLTI.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <StackPanel>
+        <TextBlock Text="Home"
+                   Foreground="white"
+                   FontSize="28"
+                   HorizontalAlignment="Left"
+                   Margin="0,0,0,20"/>
+        <StackPanel Orientation="Horizontal">
+            <Border x:Name="brdClock"
+                    Width="200"
+                    Height="200"
+                    CornerRadius="10"
+                    Margin="0,0,0,0">
+
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="Orange" Offset="0.0"/>
+                        <GradientStop Color="Purple" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <StackPanel>
+                    <TextBlock Text="Hello. It's:"
+                               FontSize="28"
+                               FontWeight="Bold"
+                               Foreground="White"
+                              
+                               Margin="10"/>
+
+                    <TextBlock x:Name="tblClock"
+                               Grid.Row="1"
+                               Text="??:??"
+                               FontSize="40"
+                               FontWeight="Bold"
+                               Foreground="White"
+                               VerticalAlignment="Center"
+                               HorizontalAlignment="Center"/>
+                </StackPanel>
+
+
+
+            </Border>
+
+            <Border Width="400"
+                    Height="200"
+                    Margin="45,0,0,0">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="Green" Offset="0.0"/>
+                        <GradientStop Color="DarkGreen" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,400,200"/>
+                </Border.Clip>
+
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="Openstack Instance"
+                                   Foreground="White"
+                                   FontSize="28"
+                                   Margin="20,10,10,0"/>
+                        <TextBlock Text="I'm gonna put some text here.&#x0a;I really dont know what..."
+                                   Foreground="White"
+                                   FontSize="18"
+                                   Margin="20,10,10,0"/>
+                    </StackPanel>
+                </Grid>
+                
+            </Border>
+
+         
+            
+        </StackPanel>
+            <Border Width="645"
+                    Height="145"
+                    Margin="0,45"
+                    HorizontalAlignment="Left"
+                    CornerRadius="10">
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="DarkCyan" Offset="0.0"/>
+                        <GradientStop Color="LightGoldenrodYellow" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="Current Instance"
+                                   Foreground="White"
+                                   FontSize="28"
+                                   Margin="20,10,10,0"/>
+                        <TextBlock Text="I'm gonna put some text here.&#x0a;I really dont know what..."
+                                   Foreground="White"
+                                   FontSize="18"
+                                   Margin="20,10,10,0"/>
+                    </StackPanel>
+                </Grid>
+
+            </Border>
+    </StackPanel>
+</UserControl>
